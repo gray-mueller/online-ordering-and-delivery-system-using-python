@@ -5,10 +5,13 @@ const styles = (props = null) =>
   StyleSheet.create({
     container: {
       flexDirection: 'row',
+      flexWrap: 'wrap', // allow it to wrap to next line
+      justifyContent: 'space-between',
       alignItems: 'center',
-      backgroundColor: props !== null ? props.themeBackground : '#fff',
+      gap: scale(8),
       padding: scale(10),
-      marginBottom: scale(10)
+      marginBottom: scale(10),
+      backgroundColor: props?.themeBackground || '#fff'
     },
     filterButton: {
       paddingHorizontal: 15,

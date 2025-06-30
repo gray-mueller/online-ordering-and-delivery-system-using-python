@@ -60,11 +60,8 @@ const Filters = ({ filters, setFilters, applyFilters }) => {
   }
 
   return (
-    <ScrollView
-      horizontal
-      showsHorizontalScrollIndicator={false}
-      contentContainerStyle={styles(currentTheme).container}
-    >
+    <View style={styles(currentTheme).container}>
+
       <TouchableOpacity
         style={styles(currentTheme).filterButton}
         onPress={handleOptionsClick}
@@ -169,7 +166,7 @@ const Filters = ({ filters, setFilters, applyFilters }) => {
           </TouchableOpacity>
         </ScrollView>
       </Modal>
-    </ScrollView>
+    </View>
   )
 }
 
